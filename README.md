@@ -37,6 +37,9 @@ DB_USERNAME=homestead  para DB_USERNAME=root
 DB_PASSWORD=secret     para DB_PASSWORD=
 ```
 ```
+Crie o database com o nome: orube
+```
+```
 php artisan migrate --seed
 ```
 
