@@ -30,14 +30,14 @@ copy .env.example .env
 ```
 php artisan key:generate
 ```
-```
-php artisan migrate --seed
-```
 Agora entre no arquivo .env e altere:
 ```
 DB_DATABASE=homestead  para DB_DATABASE=orube
 DB_USERNAME=homestead  para DB_USERNAME=root
 DB_PASSWORD=secret     para DB_PASSWORD=
+```
+```
+php artisan migrate --seed
 ```
 
 ## Agora é só acessar o nosso Site:
