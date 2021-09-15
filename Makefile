@@ -7,6 +7,7 @@ conf:
 	php artisan key:generate
 	sudo apt-get install mysql-server-5.7
 	$(MAKE) bd-conf
+    php artisan storage:link
 
 conf-git-erickson:
 	git config user.email "erickson.rinho@hotmail.com"
