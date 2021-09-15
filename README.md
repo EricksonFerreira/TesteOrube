@@ -25,12 +25,13 @@ make conf
 composer install --no-scripts
 ```
 ```
-copy .env.example .env
+cp .env.example .env
 ```
 ```
 php artisan key:generate
 ```
 Agora entre no arquivo .env e altere:
+
 ```
 DB_DATABASE=homestead  para DB_DATABASE=orube
 DB_USERNAME=homestead  para DB_USERNAME=root
@@ -42,7 +43,9 @@ Crie o database com o nome: orube
 ```
 php artisan migrate --seed
 ```
-
+```
+php artisan storage:link
+```
 ## Agora é só acessar o nosso Site:
 
 > Utilize esse comando:
